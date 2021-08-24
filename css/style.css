@@ -69,6 +69,7 @@ button{
 	background: transparent;
 	border: none;
 	position: relative;
+	transition: all .2s;
 }
 .header__search-img:before{
 	content: '';
@@ -81,6 +82,9 @@ button{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.header__search-img:hover{
+	transform: rotate(15deg);
+}
 .header__basket{
 	width: 20px;
 	height: 20px;
@@ -88,6 +92,7 @@ button{
 	border: none;
 	position: relative;
 	margin-right: 40px;
+	transition: all .3s;
 }
 .header__basket:before{
 	content: '';
@@ -99,6 +104,9 @@ button{
 	background-image: url(../images/basket.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.header__basket:hover{
+	transform: scale(1.2);
 }
 .header__since {
 	display: flex;
@@ -114,10 +122,21 @@ button{
 	color: #156963;
 	background: #fff;
 	border: 1px solid #fff;
+	transition: all .3s;
+}
+
+.white:hover{
+	border: 1px solid #156963;
 }
 .akana {
 	color: #fff;
 	background: #156963;
+	border: 1px solid #156963;
+	transition: all .3s;
+}
+.akana:hover{
+	color: #156963;
+	background: #fff;
 	border: 1px solid #156963;
 }
 
@@ -376,9 +395,17 @@ button{
 	font-size: 14px;
 	line-height: 20px;
 	background: #156963;
+	border: 1px solid #156963;
 	color: #fff;
 	text-decoration: none;
 	padding: 10px 42px;
+	transition: all .3s;
+}
+
+.shop__link:hover{
+	background: #fff;
+	color: #156963;
+	border: 1px solid #156963;
 }
 
 
@@ -443,6 +470,9 @@ button{
 	text-decoration: none;
 	margin-bottom: 15px;
 }
+.footer__link:hover{
+	text-decoration: underline;
+}
 .footer__f-t {
 	font-weight: 500;
 	font-size: 16px;
@@ -466,6 +496,13 @@ button{
 	padding: 4px 12px;
 	border: none;
 	width: 52px;
+	border: 1px solid #156963;
+}
+
+.footer__btn:hover{
+	background: #fff;
+	color: #156963;
+	border: 1px solid #156963;
 }
 
 .footer__flex-d{
